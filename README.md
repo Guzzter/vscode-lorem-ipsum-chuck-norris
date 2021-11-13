@@ -25,6 +25,7 @@ By default they don't have keybindings, but [you can add a custom keybinding](ht
   "command": "vscode-lorem-ipsum-chuck-norris.multipleParagraphs",
   "when": "editorTextFocus"
 }
+```
 
 ## Credits
 
