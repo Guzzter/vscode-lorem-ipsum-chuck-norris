@@ -4,9 +4,9 @@ import * as vscode from 'vscode';
 import {getLoremChucksum} from 'lorem-chucksum/lib/index.js';
 
 async function insertText(loremWanted: { count: number, units: string }) {
-	let editor = vscode.window.activeTextEditor;4
+	let editor = vscode.window.activeTextEditor;
 	if (editor !== undefined) {
-		editor.edit(edit => editor.selections.forEach(
+		editor.edit(edit => editor?.selections.forEach(
 			selection => {
 				edit.delete(selection);
 				edit.insert(selection.start, getLoremChucksum(loremWanted));
